@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Create and append price to header
     const price = document.createElement('h4');
     price.classList.add('price');
-    price.textContent = `${menu_item['price']}`;
+    price.textContent = `$${menu_item['price']}`;
     header.appendChild(price);
     // Append completed header to section
     section.appendChild(header);
