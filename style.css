@@ -119,6 +119,11 @@ p {
   margin-bottom: 1.5rem;
 }
 
+/* Hide all items with given class. */
+.hide-menu-item {
+  display: none;
+}
+
 /* Fix photo height and add golden border. */
 .photo {
   height: 200px;
