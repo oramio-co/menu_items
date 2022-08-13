@@ -15,15 +15,16 @@ body {
   background-color: #F1F8FD;
 }
 
-/* Add width to prevent overflow for images. Add golden border. */
+/* Add width to prevent overflow for images. */
 img {
   max-width: 100%;
-  border: 4px solid #A68E6A;
-  border-radius: 5px;
 }
 
 /* Adjust font size for contrast against heading text. */
 p {
+  font-family: open-sans-condensed, sans-serif;
+  font-weight: 300;
+  font-style: normal;
   font-size: .85rem;
 }
 
@@ -36,15 +37,67 @@ p {
   align-items: center;
 }
 
+/* Add top margin to title */
+.title {
+  margin-top: 3rem;
+}
+
 /* Add letter spacing for clarity. */
 .title {
   letter-spacing: 1px;
+}
+
+/* Add a golden underline to menu title. */
+.underline {
+  width: 5rem;
+  height: .25rem;
+  background: #A68E6A;
+  margin: 0 auto 1.5rem;
+}
+
+/* Adjust margin on larger viewports. */
+@media screen and (min-width: 600px) {
+  .underline {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Adjust layout to two columns at a larger viewport. */
+@media screen and (min-width: 600px) {
+  .content {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+  }
+}
+
+/* Fix content width at very large viewports. */
+@media screen and (min-width: 1200px) {
+  .content {
+    width: 900px;
+  }
 }
 
 /* Set default display for items. */
 .menu-item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+/* Fix photo height and add golden border. */
+.photo {
+  height: 200px;
+  border: 4px solid #A68E6A;
+  border-radius: 5px;
+}
+
+/* Adjust photo height at very large viewports. */
+@media screen and (min-width: 1200px) {
+  .photo {
+    height: 150px;
+  }
 }
 
 /* Set display for menu heading. Add border to separate heading from text. */
