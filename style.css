@@ -51,7 +51,7 @@ p {
 .underline {
   width: 5rem;
   height: .25rem;
-  background: #A68E6A;
+  background: #c59d5f;
   margin: 0 auto 1.5rem;
 }
 
@@ -60,6 +60,39 @@ p {
   .underline {
     margin-bottom: 2rem;
   }
+}
+
+/* Adjust margin below button group. */
+.btns {
+  margin-bottom: 1.5rem;
+}
+
+/* Adjust margin below button group at larger viewports. */
+@media screen and (min-width: 600px) {
+  .btns {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Adjust aesthetic of buttons to match similar projects. */
+.filter-btn {
+  background-color: transparent;
+  color: #c59d5f;
+  border-color: #c59d5f;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+/* Adjust margin between buttons. */
+.filter-btn:not(:last-child) {
+  margin-right: 5px;
+}
+
+/* Add background color when button mouseover. */
+.filter-btn:hover {
+  color: white;
+  background-color: #A68E6A;
 }
 
 /* Adjust layout to two columns at a larger viewport. */
@@ -89,7 +122,7 @@ p {
 /* Fix photo height and add golden border. */
 .photo {
   height: 200px;
-  border: 4px solid #A68E6A;
+  border: 4px solid #c59d5f;
   border-radius: 5px;
 }
 
